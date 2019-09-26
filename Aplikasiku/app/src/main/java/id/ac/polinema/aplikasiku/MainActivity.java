@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
 			}
 		}, 1000);
 	}
+
+    public void clickLogin(View view) {
+		Intent intent = new Intent(this, LoginActivity.class);
+		startActivity(intent);
+    }
 }
